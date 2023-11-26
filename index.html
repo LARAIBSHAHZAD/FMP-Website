@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Salman Estate</title>
+    <link rel="shortcut icon" type="x-icon" href="./WhatsApp Image 2023-11-21 at 12.38.54 PM.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Section 1 NavBar -->
+
+    <nav class="navbar navbar-expand-lg nav">
+        <div class="container-fluid flex-wrap me-2">
+          <a class="navbar-brand" href="#"><img class="ms-5" src="./WhatsApp Image 2023-11-21 at 12.38.54 PM.jpeg" width="120" height="50" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse flex-wrap ms-5 navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link nav" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav" href="./property.html">Property</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav" href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex ms-auto  " role="search">
+              <a class=" btn mb-2 rounded-5 bg-primary text-white p-3 mt-2 me-4" href="tel:+923191296081">Call us</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- 2nd NavBar -->
+
+   
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6 p-3">
+          <div class="d-flex">
+            <input class="form-control rounded-0" type="search" placeholder="Enter Keyword">
+            <button class="rounded-0 border border-none nav p-3" onclick="infoPage()"><i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Section 2 Carousel -->
+
+     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+      <!-- <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div> -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img width="100%" height="700px" src="https://www.hdwallpapers.in/download/high_rise_building_coverd_with_fog_4k_hd-HD.jpg" class="d-block w-100 rounded-3" alt="...">
+          <div class="carousel-caption caption1 d-none d-md-block flex-column">
+            <h1>Find a perfect dream house</h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 d-flex p-3 justify-content-center">
+                  <div class="d-flex">
+                    <input class="form-control rounded-5" style="width: 18em;" type="search" placeholder="Enter Keyword">
+                    <button class="btn rounded-5 text-white bg-primary p-3" onclick="infoPage()">Search</button>
+                  </div>
+              </div>
+               </div>
+             </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img width="100%" height="700px" src="https://c0.wallpaperflare.com/preview/754/862/416/4k-wallpaper-architecture-buildings-city.jpg" class="d-block w-100 rounded-3" alt="...">
+          <div class="carousel-caption caption2 d-none d-md-block flex-column">
+            <h1>Buy and Sell Real Estate Properties</h1>
+            <p class="fw-2">The principal law governing buying and selling of property, or land, in Pakistan.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img width="100%" height="700px" src="https://w0.peakpx.com/wallpaper/395/822/HD-wallpaper-city-amoled-black-building-city-new-night-sky.jpg" class="d-block w-100 rounded-3" alt="...">
+          <div class="carousel-caption caption3 d-none d-md-block flex-column">
+            <p class="fs-4">THE JOY OF HOME OWNING</p>
+            <h1 class="fs-1">Find Your New Home</h1>
+            <button class="btn bg-danger text-white text-center m-2 p-2 fs-5" onclick="infoPage()">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    
+    </div>
+
+
+  <!-- section 3 Our Services -->
+
+  <section class="container">
+
+    <div class="mt-4 mb-3 p-2  m-2">
+      <h1 class="p-3 text-center">
+        Our Services
+      </h1>
+      <div class="bod d-flex justify-content-center align-items-center">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="p-4 border rounded-4 border-solid border-primary m-2 w-50 border-5 text-center d-flex align-items-center">
+          <i class="fa-solid fs-1 ms-4 fa-cart-shopping"></i>
+          <h1 class="ms-3">Lifestyle</h1>
+        </div>
+        <div class="text-center color p-4">
+          <p class="justifier">A real estate agent is a licensed professional who arranges real estate transactions, putting buyers and sellers together and acting as their representative in negotiations.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 border rounded-4 border-solid border-primary m-2 w-50 border-5 text-center d-flex align-items-center">
+          <i class="fa-solid fs-1 ms-5 fa-landmark"></i></i>
+          <h1 class="ms-4">Loans</h1>
+        </div>
+        <div class="text-center color p-4">
+          <p class="justifier">Real estate agents usually are entirely compensated by a commission—a percentage of the property’s purchase price—so their income depends on their ability to close a deal.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 border rounded-4 border-solid border-primary m-2 w-50 border-5 text-center d-flex align-items-center">
+          <i class="fa-solid fs-1 ms-5 fa-calendar-check"></i>
+          <h1 class="ms-5">Sell</h1>
+        </div>
+        <div class="text-center color p-4">
+          <p class="justifier">Selling property is always easier than buying or so it seems. Property sellers usually do not have to pay different kinds of taxes and visit multiple clients because interested parties, more often than not, come to them. </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4 Popular Properties -->
+
+    <div class="mt-4 mb-3 p-2  p-2 m-2">
+      <h1 class="p-3 text-center">
+        Popular Properties
+        <div class="bod d-flex justify-content-center align-items-center mt-2">
+        </div>
+      </h1>
+    </div>
+
+    <div class="row  p-2">
+      <div class="col-md-4 mt-3">
+        <div class="">
+          <img class="rounded-3 ms-2" width="100%" height="350px" src="https://images.pexels.com/photos/1662159/pexels-photo-1662159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          <p class="p-2 color justifier">‘According to architecture parlante, the formal qualities of buildings inform viewers of their function and, thereby, of the ideals of the society that built them’.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="">
+          <img class="rounded-3 ms-2" width="100%" height="350px" src="https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          <p class="p-2 color justifier">Property can be tangible items, such as houses, cars, or appliances, or it can refer to intangible items that carry the promise of future worth, such as stock and bond certificates.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="">
+          <img class="rounded-3 ms-2" width="100%" height="350px" src="https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          <p class="p-2 color justifier">Real property is one of the most familiar types of property. It includes land, buildings occupying the land, and the rights to use and enjoy the land. Real property is the focal point of real estate.</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Section 5 Icons -->
+
+    <div class="mt-4 mb-3 p-2  p-2 m-2">
+      <h1 class="p-3 text-center">
+        Explore Our Categories & Places
+        <div class="bod d-flex justify-content-center align-items-center mt-3">
+        </div>
+      </h1>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-4 mt-3 p-2">
+        <div class="text-center">
+          <i class="fa-solid fs-1  fa-magnifying-glass-location text-primary  "></i>
+          <h3 class="pt-2 text-primary  ">Find Property</h3>
+          <p class=" color justifier">The legal boundaries of a plot of land are one of the most important things for a homeowner to know, but they’re often overlooked—.<p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3 p-2">
+        <div class="text-center">
+          <i class="fa-solid text-primary fs-1 fa-house-chimney"></i>
+          <h3 class="pt-2 text-primary">Find House</h3>
+          <p class="color justifier">“A house is made of bricks and beams. A home is made of hopes and dreams. Home is where love resides, memories are created.”<p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3 p-2">
+        <div class="text-center">
+          <i class="fa-solid text-primary fs-1 fa-building"></i>
+          <h3 class="pt-2 text-primary">Building</h3>
+          <p class=" color justifier">We require from buildings two kinds of goodness: first, the doing their practical duty well: then that they be graceful and pleasing in doing it.<p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3 p-2">
+        <div class="text-center">
+          <i class="fa-solid text-primary fs-1 fa-handshake"></i>
+          <h3 class="pt-2 text-primary">Handshakes</h3>
+          <p class=" color justifier">It is not uncommon for agreements to be bound by a handshake, but when that is the only thing sealing the deal, the legality of the deal.<p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3 p-2">
+        <div class="text-center">
+          <i class="fa-solid text-primary fs-1 fa-users"></i>
+          <h3 class="pt-2 text-primary">Our Clients</h3>
+          <p class=" color justifier">“The house you looked at today and wanted to think about until tomorrow may be the same house someone looked at yesterday and will buy today.”<p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3 p-2">
+        <div class="text-center">
+          <i class="fa-solid text-primary fs-1 fa-sack-dollar"></i>
+          <h3 class="pt-2 text-primary">Low Prices</h3>
+          <p class=" color justifier">Interest rates impact the demand and price for real estate—lower rates attract more buyers with lower mortgage rates which can drive up prices. <p>
+        </div>
+      </div>
+      
+
+    </div>
+  
+  </section>
+  
+  <!-- Section 6 Slider -->
+  
+  <section class="container">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img width="100%" height="500px" src="https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="d-block w-100 rounded-3" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img width="100%" height="500px" src="https://wallpaperaccess.com/full/1269989.jpg" class="d-block w-100 rounded-3" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img width="100%" height="500px" src="https://images.unsplash.com/photo-1572883454114-1cf0031ede2a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnVpbGRpbmdzfGVufDB8fDB8fHww" class="d-block w-100 rounded-3" alt="...">
+        </div>
+        <div class="carousel-item active">
+          <img width="100%" height="500px" src="https://wallpaper.dog/large/20506672.jpg" class="d-block w-100 rounded-3" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img width="100%" height="500px" src="https://w0.peakpx.com/wallpaper/277/540/HD-wallpaper-street-city-buildings-twilight-movement-road-thumbnail.jpg" class="d-block w-100 rounded-3" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img width="100%" height="500px" src="https://img.freepik.com/free-photo/shiny-night-city_1127-8.jpg" class="d-block w-100 rounded-3" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+  </section>
+  <!-- Section 7 Testimonials -->
+
+  <section class="container mb-5 pb-5">
+    <div class="mt-4 mb-3 p-2 p-2 m-2">
+      <h1 class="p-3 text-center">
+        Testimonials
+        <div class="bod d-flex justify-content-center align-items-center mt-2">
+        </div>
+      </h1>
+    </div>
+
+    <div class="row">
+      <div class="text-center head p-2 mt-2">
+        <h2>These Are Our Some Clients Remarks</h2>
+      </div>
+      <div class="col-md-4 p-2">
+        <div class="pt-2 d-flex justify-content-center">
+          <img class="rounded-pill" src="https://photoheads.co.uk/wp-content/uploads/2020/05/headshot-with-client-testimonial.jpg" height="150px" width="35%" alt="">
+        </div>
+        <div class="pt-1 rounded mt-3 bg-primary text-white text-center">
+          <h3>Chris Mark</h3>
+        </div>
+        <div class="pt-2 justifier color mt-2 ms-2">
+          <p>" I recently sold a house with Dave and while this can be a very stressful process, I felt 110% confident by partnering with Dave. He was candid, provided great feedback, helped explain clearly all details and managed the actual sale negotiation brilliantly. "
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 p-2">
+        <div class="pt-2 d-flex justify-content-center">
+          <img class="rounded-pill" src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw4NjYyMzA3MXx8ZW58MHx8fHx8" height="150px" width="35%" alt="">
+        </div>
+        <div class="pt-1 rounded mt-3 bg-primary text-white text-center">
+          <h3>Brock Foreman</h3>
+        </div>
+        <div class="pt-2 justifier color mt-2 ms-2">
+          <p>" I recently purchased a condominium in Portland with David Marsden working as our buyer's agent. This was complicated by the fact that we lived in St. Louis, MO at the time. From start to finish David ushered us through the process in a very thorough and gracious manner. "
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 p-2">
+        <div class="pt-2 d-flex justify-content-center">
+          <img class="rounded-pill" src="https://images.unsplash.com/photo-1484517186945-df8151a1a871?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNzI5MjU4fHxlbnwwfHx8fHw%3D" height="150px" width="35%" alt="">
+        </div>
+        <div class="pt-1 rounded mt-3 bg-primary text-white text-center">
+          <h3>Shawn Baldwin</h3>
+        </div>
+        <div class="pt-2 justifier color mt-2 ms-2">
+          <p>" David is the epitome of everything you could want in a broker; he is well-connected, knowledgeable and professional. (In fact, he was able to get us an offer before we even listed our property.) His likeability is what you want in someone representing your home to others.  "
+          </p>
+        </div>
+      </div>
+     
+    </div>
+    
+  </section>
+  
+  <!-- Section 8 Footer -->
+
+  <section class="container Footer text-white pt-5 border rounded-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="pb-2">
+          <h2 class="fs-1">EstateAgency</h2>
+        </div>
+        <div class="pt-3 ps-2">
+          <p>Real estate is considered real property that includes land and anything permanently attached to it or built on it, whether natural or man-made.</p>
+        </div>
+        <div class="ps-2">
+          <p>Phone: +92 356 945234</p>
+          <p>Email: contact@example.com</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pb-2">
+          <h2 class="fs-1">The Company
+          </h2>
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="fa-solid p-2 fs-5 fa-angle-right"></i>
+          <p class="pt-2 mt-1">Site Map</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="fa-solid p-2 fs-5 fa-angle-right"></i>
+          <p class="pt-2 mt-1">Legal</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="fa-solid p-2 fs-5 fa-angle-right"></i>
+          <p class="pt-2 mt-1">Agent Admin</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="fa-solid p-2 fs-5 fa-angle-right"></i>
+          <p class="pt-2 mt-1">Careers</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="fa-solid p-2 fs-5 fa-angle-right"></i>
+          <p class="pt-2 mt-1">Affiliate</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="fa-solid p-2 fs-5 fa-angle-right"></i>
+          <p class="pt-2 mt-1">Privacy Policy</p>
+        </div>
+        
+      </div>
+      <div class="col-md-4">
+        <div class="pb-2">
+          <h2 class="fs-1">National sites</h2>
+        </div>
+        <div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid p-2 fs-5 fa-angle-right"></i>
+            <p class="pt-2 mt-1">Karachi</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid p-2 fs-5 fa-angle-right"></i>
+            <p class="pt-2 mt-1">Lahore</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid p-2 fs-5 fa-angle-right"></i>
+            <p class="pt-2 mt-1">Hyderabad</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid p-2 fs-5 fa-angle-right"></i>
+            <p class="pt-2 mt-1">FB Area</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="pt-2 d-flex justify-content-center">
+          <a href="./index.html"    class="nav-link anchor1">Home</a>
+          <a href="./about.html"    class="nav-link anchor1">About</a>
+          <a href="./property.html" class="nav-link anchor1">Property</a>
+          <a href="./blog.html"     class="nav-link anchor1">Blog</a>
+          <a href="./contact.html"  class="nav-link anchor1">Contact</a>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="https://www.Github.com/"    class="nav-link anchor2"><i class="fa-brands fs-5 fa-github"></i></a>
+          <a href="https://www.linkedin.com/"  class="nav-link anchor2"><i class="fa-brands fs-5 fa-linkedin"></i></i></a>
+          <a href="https://www.Google.com/"    class="nav-link anchor2"><i class="fa-brands fs-5 fa-google"></i></a>
+          <a href="https://www.Instagram.com/" class="nav-link anchor2"><i class="fa-brands fs-5 fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- <div class="border mt-2">
+
+    </div> -->
+    <div class="row">
+      <div class="col-md-12 text-center mt-3">
+        <p>© Copyright EstateAgency All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>Designed by LS</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
